@@ -113,3 +113,10 @@ function graph(ID){
     // Render the plot
     Plotly.newPlot("bubble", bubbleData); 
    }
+
+// Import Data
+d3.json("samples.json").then(function(response){
+  console.log(response)
+  data=response
+  dropdown()
+})
